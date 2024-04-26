@@ -1,12 +1,12 @@
 import React from 'react'
-import heroSvg from "./assets/svg/hero-model.svg"
+import Home from './Pages/Home/Home'
+
 
 function App() {
   return (
-    <div>
-      <img src={heroSvg} />
-    
-    </div>
+    <>
+      <Home />
+    </>
   )
 }
 

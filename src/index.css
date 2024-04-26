@@ -69,3 +69,7 @@
   --ifm-home-color-border: #f7f7ff;
   --docusaurus-highlighted-code-line-bg: #ffffff12;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
