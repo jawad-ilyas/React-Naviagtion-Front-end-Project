@@ -2,10 +2,10 @@ import React from 'react'
 import MobileSvg from '../../assets/svg/MobileSvg'
 import HeroSvg from '../../assets/svg/HeroSvg'
 import Logo from '../../assets/svg/Logo'
-import { Link } from "react-router-dom"
+
 function HeroSection() {
     return (
-        <div className='container-flude md:h-full mx-auto bg-gradient-to-b  from-primary to-secondary  '>
+        <div className='container-flude md:h-screen mx-auto bg-gradient-to-b  from-primary to-secondary  '>
             {/* wrapper */}
             <div className='container mx-auto px-10 py-12 md:pt-32'>
                 {/* layout */}
@@ -32,18 +32,16 @@ function HeroSection() {
                                 </button>
                             </div>
                         </div>
-                        <div className='bg-colorText hidden md:block w-[93%] mx-auto rounded-full h-3 opacity-50 absolute bottom-11 left-5'></div>
+                        <div className='bg-colorText hidden md:block w-[95%] mx-auto rounded-full h-4 opacity-70 absolute bottom-10 left-3'></div>
                     </div>
                     <div className='md:block hidden'>
                         <HeroSvg />
                     </div>
 
                 </div>
-                {/* bottom one */}
                 <div>
-                    <div className='max-w-xl text-center   mx-auto px-6 py-5 rounded-md backdrop-blur-md bg-primary/50  text-white/80'>
-                        💡 Coming from an older version? Check out our <Link to="/" className='hover:underline font-bold' >migration guides.</Link>
-                    </div>
+                    {/* bottom one */}
+
                 </div>
 
             </div>
