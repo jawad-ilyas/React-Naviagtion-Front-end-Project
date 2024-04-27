@@ -9,7 +9,7 @@ function CardSection() {
     return (
         <div className='container-flude  bg-black'>
 
-            <div className='container p-10 py-24'>
+            <div className='container mx-auto p-10 py-24'>
                 <div className='grid  grid-cols-2'>
                     <Card icon={<SmileSvg />} title="Easy to Use" message="Start quickly with built-in navigators that deliver a seamless out-of-the-box experience." />
                     <Card icon={<PhoneCoverSvg />} title="Components built for iOS and Android" message="Components built for iOS and AndroidStart quickly with built-in navigators that deliver a seamless out-of-the-box experience." />
