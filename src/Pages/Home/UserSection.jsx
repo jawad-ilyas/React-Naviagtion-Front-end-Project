@@ -17,13 +17,13 @@ function UserSection() {
 
             <div className='container mx-auto p-10 py-24 '>
 
-                <div className='flex flex-col justify-center items-center text-colorText'>
+                <div className='flex flex-col text-center justify-center items-center text-colorText'>
                     <div>
                         <p>React Navigation is built by Expo, Software Mansion, and Callstack, with contributions from the community and sponsors:
 
                         </p>
                     </div>
-                    <div className='py-4 flex flex-row '>
+                    <div className='py-4 flex flex-row flex-wrap gap-y-2'>
                         {github.map((user, index) => {
                             return <div>
                                 <Link to={user?.html_url} target='_blank'>

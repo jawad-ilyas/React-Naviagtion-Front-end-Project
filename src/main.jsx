@@ -8,13 +8,20 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import Home from './Pages/Home/Home.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Home />
+      }
+    ]
   }
-  
+
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

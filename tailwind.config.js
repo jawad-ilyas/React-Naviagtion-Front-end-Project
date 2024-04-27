@@ -11,7 +11,8 @@ export default {
         secondary: "#585b82",
         colorText: "#f7f7ff",
         bgColor: "#B092FF",
-        black: "#25292e"
+        myBlack : "#25292e",
+        black: "#242526",
       }
     },
   },
