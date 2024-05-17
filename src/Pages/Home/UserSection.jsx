@@ -6,7 +6,7 @@ function UserSection() {
     const getFetchGithubUsers = async () => {
         const response = await fetchGithubUsers()
         setGithub(response)
-        console.log("github response into state  ", response)
+        // console.log("github response into state  ", response)
     }
     useEffect(() => {
         getFetchGithubUsers()
@@ -25,7 +25,7 @@ function UserSection() {
                     </div>
                     <div className='py-4 flex flex-row flex-wrap gap-y-2'>
                         {github.map((user, index) => {
-                            return <div>
+                            return <div key={index}>
                                 <Link to={user?.html_url} target='_blank'>
                                     <img className='size-10 rounded mx-2' key={index} src={user?.avatar_url} alt={user.id} />
                                 </Link>
