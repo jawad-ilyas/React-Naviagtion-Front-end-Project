@@ -41,7 +41,7 @@ function HeroSection() {
                 </div>
                 {/* bottom one */}
                 <div>
-                    <div className='max-w-xl text-center lg:mt-0 md:mt-8 mt-4     mx-auto px-6 py-5 rounded-md backdrop-blur-md bg-primary/50  text-white/80'>
+                    <div className='max-w-xl text-center lg:mt-0 md:mt-8 mt-4     mx-auto md:px-6 md:py-5 p-2 rounded-md backdrop-blur-md bg-primary/50  text-white/80'>
                         💡 Coming from an older version? Check out our <Link to="/" className='hover:underline font-bold' >migration guides.</Link>
                     </div>
                 </div>

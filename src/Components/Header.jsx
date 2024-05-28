@@ -24,7 +24,7 @@ function Header() {
 
 
     return (
-        <div id='header' className='container-fluid bg-white shadow  dark:bg-black text-black sticky top-0 z-[100] p-4'>
+        <div id='header' className='lg:flex hidden container-fluid bg-white shadow  dark:bg-black text-black sticky top-0 z-[100] p-4'>
             {/* <div className='container mx-auto p-4'> */}
             <div className='flex justify-between items-center'>
                 <div className='flex items-center '>
