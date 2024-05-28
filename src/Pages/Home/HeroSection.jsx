@@ -9,13 +9,13 @@ function HeroSection() {
             {/* wrapper */}
             <div className='container mx-auto px-10 py-12 md:pt-32'>
                 {/* layout */}
-                <div className='grid md:grid-cols-4 gap-x-8 justify-between'>
+                <div className='flex lg:justify-between justify-center w-full lg:flex-row md:flex-col'>
                     {/* top one  */}
-                    <div className='md:block hidden'>
+                    <div className='lg:flex  hidden lg:w-3/12 md:w-5/12 lg:order-1 md:order-2'>
                         <MobileSvg />
                     </div>
-                    <div className='relative col-span-2 w-full md:h-full'>
-                        <div className='absolute md:left-36 md:top-8 top-32 opacity-20 flex items-center justify-center'>
+                    <div className='relative  lg:w-6/12 md:w-full  md:h-full lg:order-2 md:order-1'>
+                        <div className='absolute top-[45%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 opacity-20'>
                             <Logo />
                         </div>
                         <div className='relative md:border-8 py-16 border-lightBorder dark:md:border-white rounded-xl  text-center flex flex-col justify-center gap-y-6 z-[10]'>
@@ -32,16 +32,16 @@ function HeroSection() {
                                 </button>
                             </div>
                         </div>
-                        <div className='bg-colorText hidden md:block w-[93%] mx-auto rounded-full h-3 opacity-50 absolute bottom-11 left-5'></div>
+                        <div className='bg-colorText hidden md:block w-[93%] mx-auto rounded-full h-3 opacity-50 absolute bottom-[-3%] left-5'></div>
                     </div>
-                    <div className='md:block hidden'>
+                    <div className='lg:flex hidden lg:w-3/12   md:w-5/12  md:justify-end lg:order-3 md:order-3'>
                         <HeroSvg />
                     </div>
 
                 </div>
                 {/* bottom one */}
                 <div>
-                    <div className='max-w-xl text-center   mx-auto px-6 py-5 rounded-md backdrop-blur-md bg-primary/50  text-white/80'>
+                    <div className='max-w-xl text-center lg:mt-0 md:mt-8 mt-4     mx-auto px-6 py-5 rounded-md backdrop-blur-md bg-primary/50  text-white/80'>
                         💡 Coming from an older version? Check out our <Link to="/" className='hover:underline font-bold' >migration guides.</Link>
                     </div>
                 </div>

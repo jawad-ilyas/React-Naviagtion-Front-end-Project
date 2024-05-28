@@ -24,19 +24,19 @@ function Header() {
 
 
     return (
-        <div id='header' className='container-fluid bg-white  dark:bg-black text-black sticky top-0 z-[100] p-4'>
+        <div id='header' className='container-fluid bg-white shadow  dark:bg-black text-black sticky top-0 z-[100] p-4'>
             {/* <div className='container mx-auto p-4'> */}
             <div className='flex justify-between items-center'>
                 <div className='flex items-center '>
                     <Link to="/">
                         <div className='  flex items-center '>
                             <Logo width={10} heigth={10} />
-                            <span className='hover:text-bgColor dark:text-white font-semibold ms-2'>React Navigation</span>
+                            <span className='dark:hover:text-bgColor dark:text-white font-semibold ms-2'>React Navigation</span>
                         </div>
                     </Link>
-                    <Link to="/" className='dark:text-white font-semibold ms-8'>Docs</Link>
-                    <Link to="/" className='dark:text-white font-semibold ms-8'>Blog</Link>
-                    <Link to="/" className='dark:text-white font-semibold ms-8'>Help</Link>
+                    <Link to="/docs" className='dark:text-white dark:hover:text-bgColor font-semibold ms-8'>Docs</Link>
+                    <Link to="/" className='dark:text-white dark:hover:text-bgColor font-semibold ms-8'>Blog</Link>
+                    <Link to="/" className='dark:text-white dark:hover:text-bgColor font-semibold ms-8'>Help</Link>
                 </div>
                 <div className='flex flex-row items-center space-x-3 dark:text-white'>
                     <div className='flex  items-center dark:text-white  cursor-pointer text-xl hover:text-bgColor'><p className='me-1'>Github</p><span><LuExternalLink /></span></div>

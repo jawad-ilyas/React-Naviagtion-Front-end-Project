@@ -13,11 +13,11 @@ function UserSection() {
     }, [])
 
     return (
-        <div className='container-fluid bg-secondary'>
+        <div className='container-fluid bg-ligthSecondory dark:bg-secondary'>
 
             <div className='container mx-auto p-10 py-24 '>
 
-                <div className='flex flex-col text-center justify-center items-center text-colorText'>
+                <div className='flex flex-col text-center justify-center items-center text-myBlack dark:text-colorText'>
                     <div>
                         <p>React Navigation is built by Expo, Software Mansion, and Callstack, with contributions from the community and sponsors:
 

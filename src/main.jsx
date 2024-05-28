@@ -9,7 +9,7 @@ import {
   Link,
 } from "react-router-dom";
 import Home from './Pages/Home/Home.jsx';
-
+import GettingStarted from "./Pages/Docs/DocsInnerPages/GettingStarted.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,6 +18,16 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Home />
+      },
+      {
+        path: "docs",
+        element: <Docs />,
+        children: [
+          {
+            path: "gettingstarted",
+            element : <GettingStarted />
+          }
+        ]
       }
     ]
   }
@@ -32,6 +42,8 @@ import { Provider } from 'react-redux';
 
 // ! system them detect
 import detectSystemTheme from './Utilts/detectSystemTheme.js';
+import Docs from './Pages/Docs/Docs.jsx';
+
 detectSystemTheme();
 
 ReactDOM.createRoot(document.getElementById('root')).render(

@@ -38,4 +38,4 @@ function Footer() {
     )
 }
 
-export default Wrapper(Footer, "bg-myBlack", "md:px-20", "md:py-8")
+export default Wrapper(Footer, "bg-ligthPrimary dark:bg-myBlack", "md:px-20", "md:py-8")
